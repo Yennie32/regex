@@ -1,3 +1,8 @@
+/* RESSOURCE : 
+https://www.threesl.com/blog/special-characters-regular-expressions-escape/ 
+https://medium.com/@JavaScript-World/javascript-regex-20-practical-examples-60b23e703e24
+*/
+
 // // ETAPE 1
 
 // const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
@@ -22,6 +27,6 @@
 // ETAPE 4
 
 const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
-const exp = /[a-zA-Z]/g // [] caractères optionnels, les caractères alphabétiques en minuscule et majuscules
+const exp = /\p{P}/gu // prend en compte le carctères de ponctuation
 
-console.log("compte les caractères alphabétiques: ", str.match(exp).length)
+console.log("compte les caractères de ponctuation: ", str.match(exp).length)
