@@ -24,16 +24,26 @@ https://medium.com/@JavaScript-World/javascript-regex-20-practical-examples-60b2
 
 // console.log("compte le nombre de 'de', 'des' ou 'les': ", str.match(exp).length)
 
-// ETAPE 4
+
+// // ETAPE 4
+
+const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
+const exp = /[a-zA-Z]/g // [] caractères optionnels en début de pattern 
+
+console.log("compte le nombre de caractères': ", str.match(exp).length)
+
+
+
+// ETAPE 5
 
 // const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
 // const exp = /\p{P}/gu // prend en compte le carctères de ponctuation
 
 // console.log("compte les caractères de ponctuation: ", str.match(exp).length)
 
-// ETAPE 4 bis (ajout accents)
+// ETAPE 5 bis (ajout accents)
 
-const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
-const exp = /[\u00C0-\u017F]|\p{P}/gu // prend en compte les accents et les signes de ponctuation
+// const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
+// const exp = /[\u00C0-\u017F]|\p{P}/gu // prend en compte les accents et les signes de ponctuation
 
-console.log("compte les caractères de ponctuation: ", str.match(exp).length)
+// console.log("compte les caractères de ponctuation: ", str.match(exp).length)
