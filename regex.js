@@ -12,9 +12,16 @@
 
 // console.log("compte le nombre de 'de' ou 'des': ", str.match(exp).length)
 
-// ETAPE 3
+// // ETAPE 3
+
+// const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
+// const exp = /[ld]e/g // [] caractères optionnels en début de pattern 
+
+// console.log("compte le nombre de 'de', 'des' ou 'les': ", str.match(exp).length)
+
+// ETAPE 4
 
 const str = "J'utilise les expressions regulière pour retrouver des schémas de text au sein d'une chaine de caractères."
-const exp = /[ld]e/g // [] caractères optionnels en début de pattern 
+const exp = /[a-zA-Z]/g // [] caractères optionnels, les caractères alphabétiques en minuscule et majuscules
 
-console.log("compte le nombre de 'de', 'des' ou 'les': ", str.match(exp).length)
+console.log("compte les caractères alphabétiques: ", str.match(exp).length)
